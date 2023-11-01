@@ -6,9 +6,9 @@
 
 :root {
 
-    --fonte-padrão: Arial, Verdana, sans-serif;
+    --fonte-padrão: Verdana, arial, sans-serif;
     --fonte-Título: 'Passion One', sans-serif;
-    --fonte-texto: 'Sriracha', ;
+    --fonte-texto: 'Sriracha', 'cursive' ;
 
     }
 
@@ -17,22 +17,71 @@
         padding: 0px;
     }
 
+    html, body {
+        min-height: 100vh;
+        background-color: darkgray;
+        font-family: var(--fonte-padrão);
+    }
+
     header {
         background-color: black;
         padding: 10px;
+        color: white;
+        text-align: center;
         
     }
 
     header > h1 {
-        color: white;
-        text-align: center;
+        padding-top: 50px;
+        font-variant: small-caps;
         font-family: var(--fonte-Título);
-        font-size: ;
+        font-size: 10vw;
     }
 
     header > p {
-        color: white;
-        text-align: center;
+        padding-bottom: 50px;
         font-family: var(--fonte-padrão);
 
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
+    a:hover, footer:hover {
+        text-decoration: underline;
+    }
+
+    section {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        line-height: 2em;
+        padding-left: 30px;
+        font-family: var(--fonte-texto);
+        font-size: 3.5vw;
+    }
+
+    section.normal {
+        background-color: white;
+        color: black;
+    }
+
+    section.imagem {
+        background-color: rgb(36, 32, 32);
+        color: white;
+    }
+
+    section.imagem > p {
+        display: inline-block;
+        padding: 5 px;
+        background-color: rgba(0, 0, 0, 0.363);
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
     }
